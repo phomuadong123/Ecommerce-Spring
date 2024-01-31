@@ -11,7 +11,7 @@
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
+    <div id="content-wrapper" class="d-flex flex-column ml-md-3">
 
         <!-- Main Content -->
         <div id="content">
@@ -24,7 +24,7 @@
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleAddCategoryModal"
                     data-whatever="@mdo">Add new category
             </button>
-            <p th:if="${size == 0}">No category</p>
+            <h3 class="mt-3" th:if="${size == 0}">No category</h3>
             <div th:if="${success}" class="text-center alert alert-success">
                 <p th:text="${success}">
                 </p>

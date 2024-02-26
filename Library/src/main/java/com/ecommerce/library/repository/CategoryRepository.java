@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import com.ecommerce.library.dto.CategoryDto;
 import com.ecommerce.library.model.Category;
 
 @Repository

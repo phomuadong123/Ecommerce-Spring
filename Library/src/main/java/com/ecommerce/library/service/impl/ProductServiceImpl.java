@@ -137,7 +137,7 @@ public class ProductServiceImpl implements ProductService {
     public Page<ProductDto> searchProducts(int pageNo, String keyword) {
         List<Product> products = productRepository.findAllByNameOrDescription(keyword);
         List<ProductDto> productDtoList = transferData(products);
-        Pageable pageable = PageRequest.of(pageNo, 5);
+        Pageable pageable = PageRequest.of(pageNo, 6);
         Page<ProductDto> dtoPage = toPage(productDtoList, pageable);
         return dtoPage;
     }

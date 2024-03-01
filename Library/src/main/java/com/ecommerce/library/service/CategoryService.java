@@ -6,7 +6,7 @@ import java.util.Optional;
 
 import java.util.List;
 
-
+import com.ecommerce.library.dto.CategoryDto;
 import com.ecommerce.library.model.Category;
 
 
@@ -25,5 +25,5 @@ public interface CategoryService {
 
     List<Category> findAllByActivatedTrue();
 
-    // List<CategoryDto> getCategoriesAndSize();
+    List<CategoryDto> getCategoriesAndSize();
 } 

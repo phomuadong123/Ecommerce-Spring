@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.ecommerce.library.dto.CategoryDto;
 import com.ecommerce.library.model.Category;
 import com.ecommerce.library.repository.CategoryRepository;
 import com.ecommerce.library.service.CategoryService;
@@ -64,6 +65,12 @@ public class CategoryServiceImpl implements CategoryService {
         Category categoryUpdate = categoryRepository.getReferenceById(category.getId());
         categoryUpdate.setName(category.getName());
         return categoryRepository.save(categoryUpdate);
+    }
+
+    @Override
+    public List<CategoryDto> getCategoriesAndSize() {
+        List<CategoryDto> categories = categoryRepository.getCategoriesAndSize();
+        return categories;
     }
 
 }

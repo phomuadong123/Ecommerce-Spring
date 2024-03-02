@@ -28,5 +28,6 @@ public class CustomerDto {
     private City city;
     private String image;
     private String country;
+    private String role;
 
 }

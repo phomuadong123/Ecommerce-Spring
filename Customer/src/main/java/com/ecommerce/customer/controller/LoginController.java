@@ -64,7 +64,7 @@ public class LoginController {
             e.printStackTrace();
             model.addAttribute("error", "Server is error, try again later!");
         }
-        return "register";
+        return "login";
     }
 
 
